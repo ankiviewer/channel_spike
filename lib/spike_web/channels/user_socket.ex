@@ -2,7 +2,7 @@ defmodule SpikeWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", SpikeWeb.RoomChannel
+  channel "sync:*", SpikeWeb.SyncChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
